@@ -1,0 +1,4 @@
+<resources>
+    <!-- This is the name displayed on the phone screen -->
+    <string name="app_name">Fajr Buddy</string>
+</resources>

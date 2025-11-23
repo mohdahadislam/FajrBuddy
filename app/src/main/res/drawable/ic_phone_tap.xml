@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- The Tag (Bottom) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/app_accent"
+        android:strokeWidth="2"
+        android:pathData="M4,16h16c1.1,0 2,0.9 2,2v2c0,1.1 -0.9,2 -2,2H4c-1.1,0 -2,-0.9 -2,-2v-2C2,16.9 2.9,16 4,16z"/>
+
+    <!-- The Phone (Tilted/Active) -->
+    <path
+        android:fillColor="@color/app_accent"
+        android:pathData="M15.5,1H8.5C7.12,1 6,2.12 6,3.5v13C6,17.88 7.12,19 8.5,19h7c1.38,19 2.5,17.88 2.5,16.5v-13C18,2.12 16.88,1 15.5,1z M12,17.5c-0.83,0 -1.5,-0.67 -1.5,-1.5s0.67,-1.5 1.5,-1.5 1.5,0.67 1.5,1.5S12.83,17.5 12,17.5z"/>
+
+    <!-- Signal/Tap Waves (Left side) -->
+    <path
+        android:fillColor="@color/app_accent"
+        android:pathData="M3.5,8.5c-0.83,0.83 -0.83,2.17 0,3s2.17,0.83 3,0c0.83,-0.83 0.83,-2.17 0,-3S4.33,7.67 3.5,8.5z"/>
+</vector>

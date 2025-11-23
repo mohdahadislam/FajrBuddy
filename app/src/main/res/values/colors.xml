@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="midnight_bg">#000000</color>
+    <color name="surface_card">#121212</color>
+
+    <!-- NEW: Vibrant Spring Green -->
+    <color name="app_accent">#2bd996</color>
+    <!-- Slightly darker green for button press state -->
+    <color name="app_accent_pressed">#20A875</color>
+
+    <!-- Text -->
+    <color name="text_primary">#E0E0E0</color>
+    <color name="text_secondary">#666666</color>
+
+    <!-- Switch Track (30% Opacity of Accent) -->
+    <color name="switch_track_active">#4D2bd996</color>
+    <color name="switch_track_inactive">#333333</color>
+
+    <color name="error_red">#EF4444</color>
+
+    <!-- Theme Defaults -->
+    <color name="colorPrimary">@color/midnight_bg</color>
+    <color name="colorPrimaryDark">@color/midnight_bg</color>
+    <color name="colorAccent">@color/app_accent</color>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnight_bg"
+    android:padding="32dp">
+
+    <!-- 1. THE SCANNER (Visual Nudge at Top) -->
+    <ImageView
+        android:id="@+id/imgNfcIcon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_nfc_large"
+        app:tint="#000000"
+        android:padding="20dp"
+        android:background="@drawable/bg_circle_pulse"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.15"/>
+
+    <!-- Pulse Ring 1 -->
+    <View
+        android:id="@+id/viewPulse1"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/bg_circle_pulse"
+        android:alpha="0.5"
+        app:layout_constraintTop_toTopOf="@id/imgNfcIcon"
+        app:layout_constraintBottom_toBottomOf="@id/imgNfcIcon"
+        app:layout_constraintStart_toStartOf="@id/imgNfcIcon"
+        app:layout_constraintEnd_toEndOf="@id/imgNfcIcon"/>
+
+    <!-- Pulse Ring 2 -->
+    <View
+        android:id="@+id/viewPulse2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/bg_circle_pulse"
+        android:alpha="0.3"
+        app:layout_constraintTop_toTopOf="@id/imgNfcIcon"
+        app:layout_constraintBottom_toBottomOf="@id/imgNfcIcon"
+        app:layout_constraintStart_toStartOf="@id/imgNfcIcon"
+        app:layout_constraintEnd_toEndOf="@id/imgNfcIcon"/>
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/tvScanHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Register Your Tag"
+        android:textSize="24sp"
+        android:textColor="@color/text_primary"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="68dp"
+        app:layout_constraintTop_toBottomOf="@id/imgNfcIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvScanInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch the back of your phone \n(near the top) to your smart tag"
+        android:textSize="16sp"
+        android:textColor="@color/text_secondary"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvScanHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 2. THE GREETING (Centered in remaining space) -->
+    <!-- We constrain this between the instructions and the bottom of screen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvScanInstruction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assalamualaikum 👋"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/text_primary"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Fajr Buddy"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:letterSpacing="0.15"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+    <!-- Status/Progress (Pinned to Bottom) -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/app_accent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
