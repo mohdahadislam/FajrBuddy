@@ -1,6 +1,6 @@
-Privacy Policy for Fajr Buddy
+Privacy Policy for Fajr Buddy & Alarm Buddy
 
-Last updated: November 23, 2025
+Last updated: December 8, 2025
 
 Fajr Buddy ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our Android application uses your data.
 
